@@ -2,9 +2,9 @@ import os
 import torch
 settings_path = os.path.dirname(__file__)
 
-DATA_ROOT = os.path.join(settings_path, '../data')
-CACHE_ROOT = os.path.join(settings_path, '../cache')
-RESULT_ROOT = os.path.join(settings_path, '../result')
+DATA_ROOT = os.path.join(settings_path, os.pardir, 'data')
+CACHE_ROOT = os.path.join(settings_path, os.pardir, 'cache')
+RESULT_ROOT = os.path.join(settings_path, os.pardir, 'result')
 
 GRAPH_ICEWS18 = "ICEWS18"
 GRAPH_ICEWS14 = "ICEWS14"
